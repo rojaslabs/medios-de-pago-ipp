@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Formas de Pagar IPP</title>
+
+		<!--CSS-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,300italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="files/jquery.fullPage.css" />
+		<link rel="stylesheet" href="files/venobox/venobox.css" type="text/css" media="screen" />
+		<link rel="shortcut icon" href="img/favicon.ico"/>
+		
+		<!--JQUERY-->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>	
+
+		<!--FULLPAGE-->
+		<script type="text/javascript" src="files/vendors/jquery.slimscroll.min.js"></script>
+		<script type="text/javascript" src="files/jquery.fullPage.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					slidesColor: ['#FFF', '#090', '#8B2787', '#333'],
+					anchors: ['portada', 'al_dia', 'moroso', 'medios_de_pago'],
+					menu: '#menu',
+					navigation: true,
+					navigationPosition: 'right',
+					navigationTooltips: ['Inicio', 'Cuotas al Día', 'Cuotas Vencidas', 'Medios de Pago'],
+					autoScrolling: false,
+					slidesNavigation: true,
+				});
+				
+			});
+		</script>
+
+		<!--VENOBOX-->
+		<script type="text/javascript" src="files/venobox/venobox.min.js"></script>
+		<script type="text/javascript" src="files/vendors/jquery.easings.min.js"></script>
+
+		<script>
+			$(document).ready(function(){
+		
+			/* default settings */
+			$('.venobox').venobox(); 
+
+				/* open content with custom settings */
+				$('.venobox_custom').venobox({
+					framewidth: '300px',
+					frameheight: '250px',
+					border: '0px',
+					bordercolor: '#ba7c36',
+					numeratio: true,
+					infinigall: true,
+				});
+			
+				/* auto-open #firstlink on page load */
+				$("#firstlink").venobox().trigger('click');
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="fullpage">
+			
+			<div class="section">´
+				<img style="margin-top:30px;" src="img/logo_ipp.png" width="158" height="74" alt="Logo IPP"><br><br>
+				<h1>¿Conoces tu situación financiera?</h1>
+				<a href="#al_dia"><div class="circulo_inicio verde"><!--<p>Al Día</p>--></div></a>
+				<a href="#moroso"><div class="circulo_inicio morado"><!--<p>Moroso</p>--></div></a>
+				<!--<a href="#repactacion"><div class="circulo_inicio celeste"><p>Repactación</p></div></a>-->
+			
+				<div class="footer">        
+					<p >En IPP queremos apoyarte y entregarte todas las alternativas económicas disponibles<br> para que puedas cursar tus estudios con tranquilidad y sin inconvenientes.</p>
+					<p>Si no conoces tu situación, revísala en el <span style="font-weight:400">Campus Virtual</span>,
+						<a class="venobox" data-gall="gall1" title="Para revisar tu situación, debes ingresar al Campus Virtual y hacer clic en el vínculo Servipag Online IPP" href="img/c_virtual_1.png">mira el ejemplo</a>.
+						<a style="display:none" class="venobox" data-gall="gall1" title="Una vez dentro, puedes ver tu información financiera del periodo académico." href="img/c_virtual_2.png"></a>
+					</p>
+					<!--<p>También puedes consultar en <span style="font-weight:400">consejeria@ipp.cl</span> o al <span style="font-weight:400">600 460 0477</span>.</p>-->
+					<div class="browser">
+						Sitio optimizado para &nbsp;
+						<a href="http://www.google.cl/intl/es-419/chrome/browser/" target="_blank"><img style="vertical-align:middle" src="img/chrome_icon.png" width="24" height="24" alt="Chrome"></a>
+						&nbsp;y&nbsp;
+						<a href="http://www.mozilla.org/es-CL/firefox/new/" target="_blank"><img style="vertical-align:middle"src="img/firefox_icon.png" width="24" height="24" alt="Firefox"></a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="section al_dia">
+				<h1><span style="opacity:0.5">Situación:</span> Cuotas al Día</h1>
+				<div class="video">
+					<div class="video_marco" >
+						<iframe src="https://player.vimeo.com/video/98085286?byline=0&amp;portrait=0&amp;autoplay=0" width="500" height="284" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+				<div class="loading"><img src="img/loading.gif" width="50" height="50" alt="loading"></div>
+				</div>
+				<p>Si tu situación financiera está al Día, quiere decir te encuentras con todas tus cuotas canceladas en las fechas que indicaste al momento de matricularte. Estando al día puedes seguir cancelando de la forma que lo has hecho hasta el momento, en los medios de pago habilitados en convenio con IPP.<br>
+				<a href="#medios_de_pago">Ver Medios de Pago</a>
+				</p>
+			</div>
+			
+			<div class="section moroso">
+				<h1><span style="opacity:0.5">Situación:</span> Cuotas Vencidas</h1>
+				<div class="video">
+					<div class="video_marco" >
+						<iframe src="https://player.vimeo.com/video/98085287?byline=0&amp;portrait=0&amp;autoplay=0" width="500" height="284" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+					<div class="loading"><img src="img/loading.gif" width="50" height="50" alt="loading"></div>
+				</div>
+				<p>
+					Si estás atrasado en tus cuotas mensuales, te puedes encontrar con dos escenarios: <br><br>
+					<strong>Cuota vencida con menos de 30 días:</strong><br>
+					En este caso, te encontrarás en estado <strong>cuota vencida</strong>. Para poder eliminarlo de tu registro financiero, te invitamos a regularizar tu situación en los medios de pago en convenio con IPP, teniendo en cuenta un cobro adicional por los intereses correspondientes a los días de atraso. <br><br>
+					<strong>Cuota vencida con más de 30 días:</strong><br>
+					En este caso, te encontrarás en <strong>estado prejudicial</strong> y por lo tanto, tus cuotas vencidas serán derivadas a una oficina de cobranza. Recuerda que al regularizar tu situación, se adicionará un cobro por intereses y gastos de cobranza. Recuerda que también podrás pagar en los medios de pagos en convenio con IPP, o directamente la oficina de cobranza.
+					<br>
+					<a href="#medios_de_pago">Ver Medios de Pago</a>
+				</p>
+			</div>
+			
+			<div class="section medios_de_pago">
+				<h1>Medios de Pago en convenio con IPP</h1>
+
+				<table width="80%" border="0">
+					<tr>
+						<th width="30%" align="right" scope="col">&nbsp;</th>
+						<th width="10%" align="center" scope="col"><span style="font-size:18px; color:#00CC00; font-weight:600">Al Día</span></th>
+						<th width="10%" align="center" scope="col"><span style="font-size:18px; color:#FF40CF; font-weight:600">Moroso</th><td width="15%"></th>
+						<th width="15%" align="center" scope="col">&nbsp;</th>
+					</tr>
+					<tr class="tooltip">
+						<th width="30%" align="right" scope="row">Servipag Online</th>
+						<td width="10%" align="center"><img src="img/check_al_dia.png" width="20" height="20" alt="check_al_dia"></td>
+						<td width="10%" align="center"><img src="img/check_moroso.png" width="20" height="20" alt="check_moroso"></td>
+						<td width="15%" align="center"><img src="img/via_internet.png" width="90" height="20" alt="via_internet"></td>
+						<td width="35%" align="left"><span>A través del Campus Virtual</span></td>
+					</tr>
+					<tr class="tooltip">
+						<th width="30%" align="right" scope="row">Sencillito Online</th>
+						<td width="10%" align="center"><img src="img/check_al_dia.png" width="20" height="20" alt="check_al_dia"></td>
+						<td width="10%" align="center"><img src="img/check_moroso.png" width="20" height="20" alt="check_moroso"></td>
+						<td width="15%" align="center"><img src="img/via_internet.png" width="90" height="20" alt="via_internet"></td>
+						<td width="35%" align="left"><span>Sólo con tarjeta ABCDin</span></td>
+					</tr>
+					<tr class="tooltip">
+						<th width="30%" align="right" scope="row">Cajas Sencillito </th>
+						<td width="10%" align="center"><img src="img/check_al_dia.png" width="20" height="20" alt="check_al_dia"></td>
+						<td width="10%" align="center"><img src="img/check_moroso.png" width="20" height="20" alt="check_moroso"></td>
+						<td width="15%" align="center">&nbsp;</td>
+						<td width="35%" align="left"><span>indicando tu rut</span></td>
+					</tr>
+					<tr class="tooltip">
+						<th width="30%" align="right" scope="row">Clientes Banco Estado </th>
+						<td width="10%" align="center"><img src="img/check_al_dia.png" width="20" height="20" alt="check_al_dia"></td>
+						<td width="10%" align="center"><img src="img/check_moroso.png" width="20" height="20" alt="check_moroso"></td>
+						<td width="15%" align="center">&nbsp;</td>
+						<td width="35%" align="left"><span>Si tienes Cuenta Rut o Cuenta Corriente, puedes pagar a través de la web del Banco</span></td>
+					</tr>
+					<tr class="tooltip">
+						<th width="30%" align="right" scope="row">Caja Vecina </th>
+						<td width="10%" align="center"><img src="img/check_al_dia.png" width="20" height="20" alt="check_al_dia"></td>
+						<td width="10%" align="center"><img src="img/check_moroso.png" width="20" height="20" alt="check_moroso"></td>
+						<td width="15%" align="center">&nbsp;</td>
+						<td width="35%" align="left"><span>Indicando al personal de caja el <div style="display:inline; color:#FFF;font-weight:600">Número de Convenio: 9147</div></span></td>
+					</tr>
+					<tr class="tooltip">
+						<th width="30%" align="right" scope="row">Cajas ServiEstado </th>
+						<td width="10%" align="center"><img src="img/check_al_dia.png" width="20" height="20" alt="check_al_dia"></td>
+						<td width="10%" align="center"><img src="img/check_moroso.png" width="20" height="20" alt="check_moroso"></td>
+						<td width="15%" align="center">&nbsp;</td>
+						<td width="35%" align="left"><span>Indicando que pagas <div style="display:inline; color:#FFF;font-weight:600">a nombre de IPP</div></span></td>
+					</tr>
+					<tr class="tooltip">
+						<th width="30%" align="right" scope="row">Unired </th>
+						<td width="10%" align="center"><img src="img/check_al_dia.png" width="20" height="20" alt="check_al_dia"></td>
+						<td width="10%" align="center"><img src="img/check_moroso.png" width="20" height="20" alt="check_moroso"></td>
+						<td width="15%" align="center">&nbsp;</td>
+						<td width="35%" align="left"><span>Digitando tu rut en el tótem</span></td>
+					</tr>
+					<tr class="tooltip">
+						<th width="30%" align="right" scope="row">Of. de Cobranza Hidalgo Lecaros</th>
+						<td width="10%" align="center"><img src="img/check_al_dia.png" width="20" height="20" alt="check_al_dia"></td>
+						<td width="10%" align="center"><img src="img/check_moroso.png" width="20" height="20" alt="check_moroso"></td>
+						<td width="15%" align="center">&nbsp;</td>
+						<td width="35%" align="left">
+						<span><a title="Sucursales" class="venobox" href="img/lecaros.png" 
+						style="color:#0CF">Ver Sucursales</a></span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

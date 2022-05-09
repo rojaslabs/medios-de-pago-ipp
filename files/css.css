@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body{
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+h1 {
+	font-weight:300;
+	color:#FFF;
+	font-size:45px;
+	margin-bottom:50px;
+	margin-top:20px;
+}
+
+a{color:#09F; font-weight:600}
+
+.section:first-child h1{color:#363669;}
+
+.section{
+	text-align:center; 
+	color:#FFF; 
+	font-size:15px;
+}
+
+.video{
+	display:inline-block;
+	margin:0 30px 5px 30px;
+	width:536px;
+	height:317px;
+	position:relative;
+	background:url(../img/video_sombra.png);
+}
+
+.video_marco{z-index:11; position:absolute; margin-left:18px; margin-top:3px;}
+
+.loading{position:absolute; z-index:10; margin-top:120px; margin-left:250px}
+
+.al_dia p, .moroso p, repactacion p{
+	display:inline-block;
+	max-width:500px;
+	vertical-align:top;
+	text-align:left;
+	line-height:25px;
+	font-weight:300;
+	text-align:justify;
+}
+
+.al_dia a, .moroso a, .repactacion a{
+	display:inline-block;
+	color:#FFF;
+	background:rgba(255,255,255,0.2);
+	padding:10px 15px;;
+	border-radius:20px;
+	text-decoration:none;
+	font-size:20px;
+	margin-top:30px;
+	margin-bottom:20px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.al_dia a:hover, .moroso a:hover, repactacion a:hover{background:#333;}
+
+.circulo_inicio {
+	margin:auto;
+	margin-left:20px;
+	margin-right:20px;
+	margin-top:20px;
+	margin-bottom:20px;
+	display:inline-block;
+	vertical-align:top;
+    width: 160px;
+    height: 160px;
+   -moz-border-radius: 85px; 
+   -webkit-border-radius: 85px; 
+    border-radius: 85px;
+   	box-shadow: 0 0 0 0px rgba(255,255,255,1);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.circulo_inicio p{
+	color:#FFF;
+	font-size:25px;
+	line-height:100px;
+	font-weight:400;
+}
+
+.verde{background-color:#090; background-image:url(../img/circulo_al_dia.png); background-position:top}
+.verde:hover{background-color:#00CC00; box-shadow: 0 0 0 15px rgba(0,204,0,0.5); background-position:bottom}
+.morado{background-color:#8C2888;background-image:url(../img/circulo_moroso.png); background-position:top}
+.morado:hover{background-color:#CC0099; box-shadow: 0 0 0 15px rgba(204,0,153,0.5);background-position:bottom}
+.celeste{background-color:#0099FF;}
+.celeste:hover{background-color:#00CCFF; box-shadow: 0 0 0 15px rgba(0,204,255,0.5);}
+
+.footer{font-size:18px; color:#333; font-weight:300; text-align:center; margin-top:70px; margin-bottom:30px;}
+.browser{font-size:13px; color:#333; margin-top:50px}
+
+table, th, tr, td{
+	border-collapse:collapse; 
+	margin:0 auto;
+	padding:8px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	font-weight:300;
+}
+
+tr{border-top:1px solid #666}
+tr img{vertical-align:middle}
+
+tr:nth-child(1), tr:nth-child(2){border:none}
+tr:hover{background:#3F3F3F;}
+tr:hover th{color:#FC0;text-shadow: 0px 6px 13px #000;}
+tr:first-child:hover{background:none;}
+tr:first-child:hover th{text-shadow:none}
+
+.tooltip span {
+	color:#CCC;
+	display:block;
+	-moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+    border-radius: 5px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.tooltip:hover span {
+	color:#FC0;
+	padding:15px 0 15px 0;
+	text-shadow: 0px 7px 15px #000;
+}
